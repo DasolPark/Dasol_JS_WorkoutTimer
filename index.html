@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Word Out Schedule</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__text">
+        <span class="header__title">TOTAL WORK OUT TIME</span>
+      </div>
+      <div class="header__stopWatch">
+        <time class="header__stopWatchText" id="jsMainStopWatch">00:00:00</time>
+      </div>
+      <div class="header__btns">
+        <button class="header__btn" id="jsStartBtn">START</button>
+        <button class="header__btn" id="jsStopBtn">STOP</button>
+        <button class="header__btn" id="jsClearBtn">CLEAR</button>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__workoutTitle">
+        <span class="main__workoutTitle--text">PULL UP</span>
+      </div>
+      <div class="main__workoutChecker">
+        <div class="main__kg">
+          <span class="main__kgWright" id="jsKgWright">15</span>
+          <span class="main__kgText">KG</span>
+        </div>
+        <div class="main__times">
+          <span class="main__timesWrite">15</span>
+          <span class="main__timesText">TIMES</span>
+        </div>
+        <div class="main__set">
+          <span class="main__setWright">20</span>
+          <span class="main__setText">SET</span>
+        </div>
+        <div class="main__stopwatch" id="jsStopWatch">00:00:00</div>
+        <div class="main__completeBtnWrapper">
+          <button class="main__completeBtn" id="jsCompleteBtn">COMPLETE</button>
+        </div>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
