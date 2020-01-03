@@ -44,7 +44,9 @@ body {
 }
 
 .header .header__btns button,
-.main__completeBtnWrapper button {
+.main__completeBtnWrapper button,
+.main__addWorkoutTitle button,
+.main__addSet button {
   all: unset;
   cursor: pointer;
   background-color: white;
@@ -61,8 +63,17 @@ body {
 }
 
 .header__btns button:active,
-.main__completeBtnWrapper button:active {
-  transform: scale(0.98);
+.main__completeBtnWrapper button:active,
+.main__addWorkoutTitle button:active,
+.main__addSet button:active {
+  transform: scale(0.9);
+}
+
+.main__addWorkoutTitle button,
+.main__addSet button {
+  width: 30px;
+  height: 20px;
+  margin-right: 10px;
 }
 
 .main {
@@ -75,6 +86,11 @@ body {
 }
 
 .main .main__workoutTitle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 2px solid black;
+  padding-top: 10px;
   font-size: 20px;
   font-weight: 600;
 }
@@ -85,4 +101,34 @@ body {
   align-items: center;
   width: 500px;
   margin-top: 20px;
+}
+
+.main__addWorkoutTitleText {
+  margin-right: 15px;
+  text-transform: uppercase;
+}
+
+.main__wrightBox,
+.main__workoutTitleInput {
+  border-radius: 10px;
+  width: 50px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.main__workoutTitleInput {
+  margin-top: 5px;
+  width: 200px;
+  font-size: 20px;
+}
+
+.main__kg,
+.main__times,
+.main__set,
+.main__stopwatch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
 }

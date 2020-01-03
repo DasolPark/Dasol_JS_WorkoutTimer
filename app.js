@@ -3,6 +3,11 @@ const jsStart = document.getElementById('jsStartBtn');
 const jsStop = document.getElementById('jsStopBtn');
 const jsClear = document.getElementById('jsClearBtn');
 
+const jsWorkoutTitle = document.getElementById('jsWorkoutTitle');
+const jsKgWright = document.getElementById('jsKgWright');
+const jsTimeWright = document.getElementById('jsTimeWright');
+const jsSetWright = document.getElementById('jsSetWright');
+
 const jsStopWatch = document.getElementById('jsStopWatch');
 const jsCompleteBtn = document.getElementById('jsCompleteBtn');
 let seconds = 0,
@@ -55,6 +60,22 @@ jsClear.addEventListener('click', () => {
   seconds = 0;
   minutes = 0;
   hours = 0;
+});
+
+jsWorkoutTitle.addEventListener('click', () => {
+  jsWorkoutTitle.value = window.prompt('PULL UP? PUSH UP?');
+});
+
+jsKgWright.addEventListener('click', () => {
+  jsKgWright.value = window.prompt('KG?');
+});
+
+jsTimeWright.addEventListener('click', () => {
+  jsTimeWright.value = window.prompt('TIMES?');
+});
+
+jsSetWright.addEventListener('click', () => {
+  jsSetWright.value = window.prompt('SET?');
 });
 
 jsCompleteBtn.addEventListener('mousedown', inputCurrentWatch);

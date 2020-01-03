@@ -29,19 +29,30 @@
     </header>
     <main class="main">
       <div class="main__workoutTitle">
-        <span class="main__workoutTitle--text">PULL UP</span>
+        <div class="main__addWorkoutTitle">
+          <button class="main__addWorkoutBtn" id="jsAddWorkoutBtn">+</button>
+        </div>
+        <label for="input" class="main__addWorkoutTitleText">Title</label>
+        <input
+          type="text"
+          class="main__workoutTitleInput"
+          id="jsWorkoutTitle"
+        />
       </div>
       <div class="main__workoutChecker">
+        <div class="main__addSet">
+          <button class="main__addSetBtn" id="jsAddSetBtn">+</button>
+        </div>
         <div class="main__kg">
-          <span class="main__kgWright" id="jsKgWright">15</span>
+          <input type="text" class="main__wrightBox" id="jsKgWright" />
           <span class="main__kgText">KG</span>
         </div>
         <div class="main__times">
-          <span class="main__timesWrite">15</span>
+          <input type="text" class="main__wrightBox" id="jsTimeWright" />
           <span class="main__timesText">TIMES</span>
         </div>
         <div class="main__set">
-          <span class="main__setWright">20</span>
+          <input type="text" class="main__wrightBox" id="jsSetWright" />
           <span class="main__setText">SET</span>
         </div>
         <div class="main__stopwatch" id="jsStopWatch">00:00:00</div>
