@@ -95,7 +95,7 @@ body {
   font-weight: 600;
 }
 
-.main .main__workoutChecker {
+.main__workoutCheckerList {
   display: flex;
   justify-content: space-around;
   align-items: center;
