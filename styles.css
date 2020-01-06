@@ -29,6 +29,10 @@ body {
   flex-direction: column;
 }
 
+.header .header__text {
+  margin-top: 10px;
+}
+
 .header .header__title {
   font-size: 20px;
   font-weight: 600;
