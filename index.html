@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Word Out Schedule</title>
+    <title>Workout Timer</title>
   </head>
   <body>
     <header class="header">
@@ -19,6 +19,10 @@
       <div class="header__currentTime" id="js-currentTime">
         <div class="header__currentTimeText" id="js-clock">00:00:00</div>
       </div>
+      <form class="header__greetingForm" id="js-greetingForm">
+        <input type="text" placeholder="What is your name?" />
+      </form>
+      <h4 class="header__greetingName" id="js-greetingName"></h4>
       <div class="header__text">
         <span class="header__title">TOTAL WORK OUT TIME</span>
       </div>
@@ -69,7 +73,8 @@
         </li>
       </ul>
     </main>
-    <script src="./app.js"></script>
+    <script src="index.js"></script>
     <script src="clock.js"></script>
+    <script src="greeting.js"></script>
   </body>
 </html>

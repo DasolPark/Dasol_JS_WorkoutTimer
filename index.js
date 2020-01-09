@@ -48,10 +48,6 @@ function inputCurrentWatch() {
   jsCompleteBtn.removeEventListener('mousedown', inputCurrentWatch);
 }
 
-function addNewSet() {}
-
-function removeSet() {}
-
 // timer();
 
 jsStart.addEventListener('click', () => {
@@ -69,24 +65,73 @@ jsClear.addEventListener('click', () => {
   hours = 0;
 });
 
-jsWorkoutTitle.addEventListener('click', () => {
-  jsWorkoutTitle.value = window.prompt('PULL UP? PUSH UP?');
-});
+jsCompleteBtn.addEventListener('mousedown', inputCurrentWatch);
 
 jsAddSetBtn.addEventListener('click', () => {
-  addNewSet();
-});
+  const li = document.createElement('li');
+  li.classList.add('main__workoutCheckerList');
+  const divBtn = document.createElement('div');
+  divBtn.classList.add('main__delSet');
+  const minusBtn = document.createElement('button');
+  minusBtn.classList.add('main__delSetBtn');
+  minusBtn.id = 'jsDelSetBtn';
+  minusBtn.textContent = '-';
+  divBtn.appendChild(minusBtn);
 
-jsKgWright.addEventListener('click', () => {
-  jsKgWright.value = window.prompt('KG?');
-});
+  const divKg = document.createElement('div');
+  divKg.classList.add('main__kg');
+  const inputKg = document.createElement('input');
+  inputKg.classList.add('main__wrightBox');
+  const spanKg = document.createElement('span');
+  spanKg.classList.add('main__kgText');
+  spanKg.textContent = 'KG';
+  divKg.appendChild(inputKg);
+  divKg.appendChild(spanKg);
 
-jsTimeWright.addEventListener('click', () => {
-  jsTimeWright.value = window.prompt('TIMES?');
-});
+  const divTimes = document.createElement('div');
+  divTimes.classList.add('main__times');
+  const inputTimes = document.createElement('input');
+  inputTimes.classList.add('main__wrightBox');
+  const spanTimes = document.createElement('span');
+  spanTimes.classList.add('main__timesText');
+  spanTimes.textContent = 'TIMES';
+  divTimes.appendChild(inputTimes);
+  divTimes.appendChild(spanTimes);
 
-jsSetWright.addEventListener('click', () => {
-  jsSetWright.value = window.prompt('SET?');
-});
+  const divSet = document.createElement('div');
+  divSet.classList.add('main__set');
+  const inputSet = document.createElement('input');
+  inputSet.classList.add('main__wrightBox');
+  const spanSet = document.createElement('span');
+  spanSet.classList.add('main__setText');
+  spanSet.textContent = 'SET';
+  divSet.appendChild(inputSet);
+  divSet.appendChild(spanSet);
 
-jsCompleteBtn.addEventListener('mousedown', inputCurrentWatch);
+  const divStopWatch = document.createElement('div');
+  divStopWatch.classList.add('main__stopwatch');
+  divStopWatch.textContent = '00:00:00';
+
+  const divComBtn = document.createElement('div');
+  divComBtn.classList.add('main__completeBtnWrapper');
+  const completBtn = document.createElement('button');
+  // How to make every different btn id
+  completBtn.classList = 'main__completeBtn';
+  // let newId;
+  completBtn.id = 'jsCompleteBtn';
+  completBtn.textContent = 'COMPLETE';
+  divComBtn.appendChild(completBtn);
+
+  li.appendChild(divBtn);
+  li.appendChild(divKg);
+  li.appendChild(divTimes);
+  li.appendChild(divSet);
+  li.appendChild(divStopWatch);
+  li.appendChild(divComBtn);
+  jsWorkoutUl.appendChild(li);
+
+  // jsCompleteBtnTwo.addEventListener('mousedown', () => {
+  //   divStopWatch.textContent = jsMainStopWatch.textContent;
+  //   jsCompleteBtnTwo.removeEventListener('mousedown', false);
+  // });
+});

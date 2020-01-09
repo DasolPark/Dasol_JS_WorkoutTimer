@@ -29,6 +29,19 @@ body {
   flex-direction: column;
 }
 
+.header__greetingForm,
+.header__greetingName {
+  display: none;
+  text-align: center;
+}
+
+.showing {
+  display: block;
+  color: black;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
 .header .header__text {
   margin-top: 10px;
 }
@@ -50,7 +63,8 @@ body {
 .header .header__btns button,
 .main__completeBtnWrapper button,
 .main__addWorkoutTitle button,
-.main__addSet button {
+.main__addSet button,
+.main__delSet button {
   all: unset;
   cursor: pointer;
   background-color: white;
@@ -69,12 +83,14 @@ body {
 .header__btns button:active,
 .main__completeBtnWrapper button:active,
 .main__addWorkoutTitle button:active,
-.main__addSet button:active {
+.main__addSet button:active,
+.main__delSet button:active {
   transform: scale(0.9);
 }
 
 .main__addWorkoutTitle button,
-.main__addSet button {
+.main__addSet button,
+.main__delSet button {
   width: 30px;
   height: 20px;
   margin-right: 10px;
