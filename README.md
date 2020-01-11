@@ -1,8 +1,8 @@
 # Goals
 
-## [x] Basic CSS
-## [x] Stop watch
-## [x] Current Time
-## [x] Greeting
-## [ ] Add set list(complete button, - remove button)
-## [ ] Add new kind of workout
+## [X] Basic CSS
+## [X] Stop watch
+## [X] Current Time
+## [X] Greeting
+## [X] Add set list(complete button, - remove button)
+## [X] Add new kind of workout
