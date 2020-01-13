@@ -74,7 +74,6 @@ jsAddWorkoutBtn.addEventListener('click', e => {
 
   const divAddWorkoutTitle = document.createElement('div');
   divAddWorkoutTitle.classList.add('main__addWorkoutTitle');
-  divTitle.appendChild(divAddWorkoutTitle);
 
   const btnAddWokroutTitle = document.createElement('button');
   btnAddWokroutTitle.classList.add('main__addWorkoutBtn');
@@ -85,15 +84,16 @@ jsAddWorkoutBtn.addEventListener('click', e => {
     newUl.parentNode.removeChild(newUl);
   });
   divAddWorkoutTitle.appendChild(btnAddWokroutTitle);
+  divTitle.appendChild(divAddWorkoutTitle);
 
   const labelWorkoutTitle = document.createElement('label');
   labelWorkoutTitle.classList.add('main__addWorkoutTitleText');
   labelWorkoutTitle.textContent = 'Title';
-  divAddWorkoutTitle.appendChild(labelWorkoutTitle);
+  divTitle.appendChild(labelWorkoutTitle);
 
   const inputWorkoutTitle = document.createElement('input');
   inputWorkoutTitle.classList.add('main__workoutTitleInput');
-  divAddWorkoutTitle.appendChild(inputWorkoutTitle);
+  divTitle.appendChild(inputWorkoutTitle);
 
   jsMain.appendChild(divTitle);
 

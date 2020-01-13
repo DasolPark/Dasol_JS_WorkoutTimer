@@ -6,3 +6,5 @@
 ## [X] Greeting
 ## [X] Add set list(complete button, - remove button)
 ## [X] Add new kind of workout
+## [x] CSS - Responsive Web Design(Media Queries, Fluid Grid, Viewport) For mobile
+## [ ] Github Pages

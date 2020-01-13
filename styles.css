@@ -29,6 +29,10 @@ body {
   flex-direction: column;
 }
 
+.header h4 {
+  font-weight: 600;
+}
+
 .header__greetingForm,
 .header__greetingName {
   display: none;
@@ -43,7 +47,7 @@ body {
 }
 
 .header .header__text {
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .header .header__title {
@@ -52,7 +56,7 @@ body {
 }
 
 .header .header__stopWatch {
-  margin-top: 30px;
+  margin-top: 5px;
   font-size: 30px;
 }
 
@@ -151,4 +155,72 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: 600;
+}
+
+@media all and (max-width: 375px) {
+  .main__addWorkoutTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__workoutCheckerList {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-right: 5%;
+  }
+
+  .main__addWorkoutTitleText {
+    font-size: 1rem;
+  }
+
+  .main__wrightBox,
+  .main__workoutTitleInput {
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+
+  .main__wrightBox {
+    min-width: 30px;
+    max-width: 35px;
+  }
+
+  .main__kgText,
+  .main__timesText,
+  .main__setText {
+    margin-right: 5%;
+  }
+
+  .main__kg,
+  .main__times,
+  .main__set,
+  .main__stopwatch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+    font-weight: 600;
+  }
+
+  .main__stopwatch {
+    margin-right: 1%;
+    font-size: 0.9rem;
+  }
+
+  .main__completeBtnWrapper button {
+    font-size: 0.7rem;
+  }
+
+  input {
+    border: none;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
 }
