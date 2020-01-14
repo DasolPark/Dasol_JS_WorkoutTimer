@@ -1,3 +1,5 @@
+# https://dasolpark.github.io/Dasol_VJS_WorkoutTimer/
+
 # Goals
 
 ## [X] Basic CSS
@@ -15,5 +17,3 @@
 ## [X] CSS - Responsive Web Design(Media Queries, Fluid Grid, Viewport) For mobile
 
 ## [X] Github Pages
-
-# URL: https://dasolpark.github.io/Dasol_VJS_WorkoutTimer/
