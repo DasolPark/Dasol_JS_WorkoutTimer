@@ -1,4 +1,5 @@
-# Click! 👉https://dasolpark.github.io/Dasol_VJS_WorkoutTimer/
+# Click! 👇
+https://dasolpark.github.io/Dasol_VJS_WorkoutTimer/
 
 # Goals
 
